@@ -1,0 +1,17 @@
+{
+  "name": "grpc-file-streams",
+  "version": "0.0.1",
+  "scripts": {
+    "compile": "protoc --js_out=import_style=commonjs,binary:. proto/*.proto",
+    "start:client": "node client/index.js",
+    "start:server": "node server/index.js"
+  },
+  "devDependencies": {
+    "google-protobuf": "^3.20.0-rc.2"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.5.9",
+    "@grpc/proto-loader": "^0.6.9",
+    "commander": "^9.1.0"
+  }
+}
